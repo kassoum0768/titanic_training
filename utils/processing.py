@@ -1,8 +1,9 @@
 import pandas as pd
 from sklearn.model_selection import cross_val_score, train_test_split, KFold
-from sklearn.linear_model import LogisticRegression,
+from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, confusion_matrix, ConfusionMatrixDisplay
 from sklearn import metrics
+from utils import preprocessing, processing
 
 
 def modelisation(X, y, model=LogisticRegression(random_state=42)):
